@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-const App = () => <p>React here!</p>;
+const App = () => <p className="content">React here!</p>;
 
 export default App;
 

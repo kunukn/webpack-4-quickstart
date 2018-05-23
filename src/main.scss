@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 4rem;
+    min-height: 100vh;
+}
+
+[id=app]{
+    background: lightblue;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content, p {
+    display: block;
+    background-color: pink;
+    margin: 0;
+}
