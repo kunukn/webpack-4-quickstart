@@ -1,4 +1,3 @@
-console.log('index');
-
-import "./App";
 import "./main.scss";
+import "./React";
+

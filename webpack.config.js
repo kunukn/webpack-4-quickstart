@@ -1,9 +1,10 @@
-// webpack v4
+// webpack 4
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+
 module.exports = {
   entry: { main: "./src/index.js" },
   output: {
@@ -13,7 +14,7 @@ module.exports = {
   devServer: {
     port: 9000,
     contentBase: path.join(__dirname, ""),
-    open: true,
+    open: true
   },
   module: {
     rules: [
@@ -34,19 +35,19 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-      {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ]
-      },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     "style-loader",
+      //     MiniCssExtractPlugin.loader,
+      //     "css-loader"
+      //   ]
+      // },
       {
         test: /\.scss$/,
         use: [
           "style-loader",
-          MiniCssExtractPlugin.loader,
+          //MiniCssExtractPlugin.loader, // use when writing to file
           "css-loader",
           "postcss-loader",
           "sass-loader"
@@ -57,11 +58,11 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin("dist", {}),
     new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
-       //chunkFilename: "[id].css"
+      filename: "[name].css",
+      chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      inject: true,
       hash: true,
       template: "./src/index.html",
       filename: "index.html"

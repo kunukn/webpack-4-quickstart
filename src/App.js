@@ -1,8 +1,5 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
-const App = () => <p className="content">React here!</p>;
+const App = ({ title }) => <p className="content">{title}</p>;
 
 export default App;
-
-ReactDOM.render(<App />, document.getElementById("app"));
