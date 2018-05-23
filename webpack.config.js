@@ -35,14 +35,6 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     "style-loader",
-      //     MiniCssExtractPlugin.loader,
-      //     "css-loader"
-      //   ]
-      // },
       {
         test: /\.scss$/,
         use: [
@@ -68,5 +60,11 @@ module.exports = {
       filename: "index.html"
     }),
     new WebpackMd5Hash()
-  ]
+  ],
+  resolve: {
+    alias: {
+      root: path.resolve(__dirname, "src"),
+      components: path.resolve(__dirname, "src/components")
+    }
+  }
 };
