@@ -1,4 +1,5 @@
 import React from "react";
+import './Box.scss';
 
 export default class Box extends React.Component {
   static defaultProps = {

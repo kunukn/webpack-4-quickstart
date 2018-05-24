@@ -15,29 +15,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.content {
-  font-size: 4rem;
-  display: block;
-  background: rgba(white, 0.3);
-  margin: 0;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
-
-.box {
-  border: 1px solid black;
-  padding: 0.5rem;
-  border-radius: 4px;
-  &__title {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: normal;
-  }
-  &__body {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: normal;
-    color: gray;
-  }
-}

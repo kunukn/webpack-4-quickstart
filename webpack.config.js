@@ -37,6 +37,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
+        exclude: /node_modules/,
         use: [
           "style-loader",
           //MiniCssExtractPlugin.loader, // use when writing to file
@@ -62,6 +63,7 @@ module.exports = {
     new WebpackMd5Hash()
   ],
   resolve: {
+    extensions: [".js", ".jsx", ".scss"],
     alias: {
       root: path.resolve(__dirname, "src"),
       components: path.resolve(__dirname, "src/components")
