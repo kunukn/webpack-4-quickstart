@@ -1,7 +1,7 @@
 {
   "name": "webpack-4-quickstart",
   "version": "1.0.0",
-  "description": "Webpack 4 quickstart",
+  "description": "Webpack 4 quickstart with React and scss",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server  --color --mode development",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valentinogagliardi/webpack-4-quickstart.git"
+    "url": "git+https://github.com/kunukn/webpack-4-quickstart.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/valentinogagliardi/webpack-4-quickstart/issues"
+    "url": "https://github.com/kunukn/webpack-4-quickstart/issues"
   },
-  "homepage": "https://github.com/valentinogagliardi/webpack-4-quickstart#readme",
+  "homepage": "https://github.com/kunukn/webpack-4-quickstart#readme",
   "devDependencies": {
     "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.0",
@@ -34,7 +34,6 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.8.2",
-    "extract-text-webpack-plugin": "^3.0.2",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.2.0",

@@ -1,2 +1,2 @@
 import "./main.scss";
-import "./React";
+import "./Bootstrap";
