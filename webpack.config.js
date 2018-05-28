@@ -1,4 +1,4 @@
-// webpack 4
+// webpack 4+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackMd5Hash = require("webpack-md5-hash");
@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
           exclude: /node_modules/,
           use: [
             "style-loader",
-            isProd && MiniCssExtractPlugin.loader, // write to disc
+            ...(isProd ? [MiniCssExtractPlugin.loader] : []), // write to disc
             "css-loader",
             "postcss-loader",
             "sass-loader"
